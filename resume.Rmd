@@ -5,7 +5,7 @@ pagetitle: "Malcolm J. Mashig"
 
 ## ________________________________________________________________________
 
-<a href="https://github.com/MalcolmMashig/resume/blob/master/malcolm-mashig-resume.pdf" target="_blank">Download on GitHub</a>
+<a href="https://github.com/MalcolmMashig/portfolio-website/blob/main/images/malcolm-mashig-resume.pdf" target="_blank">Download on GitHub</a>
 
 <center>
 
