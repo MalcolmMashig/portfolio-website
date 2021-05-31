@@ -1,0 +1,194 @@
+---
+title: " "
+pagetitle: "Malcolm J. Mashig"
+---
+
+## ________________________________________________________________________ {.tabset .tabset-fade}
+
+### CS 6501: Information Retrieval {.tabset .tabset-fade}
+
+#### Re-ranking Search Results via Interactive Disambiguation
+
+**Project Summary:** *We hypothesize and develop a prototype search engine feature to help users clarify ambiguous search queries before displaying the results (for the sake of fairness). Ambiguity is measured, utilizing natural language processing, based on the diversity of the top N search results for a given search query.*
+
+Feel free to experiment with our <a href="https://malcolmmashig.shinyapps.io/interactive-google-search" target="_blank">interactive Google Search application</a>
+
+<center>
+
+<img src="images/CS-6501-UVA-1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-UVA-2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-UVA-3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-UVA-4.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-UVA-5.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-UVA-6.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+#### A Survey on Conversational IR Systems
+
+**Project Summary:** *A discussion of six key papers in the field of conversational information retrieval systems (search and recommendation engines)*
+
+<center>
+
+<img src="images/CS-6501-SURVEY-UVA-1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-SURVEY-UVA-2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-SURVEY-UVA-3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-SURVEY-UVA-4.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-SURVEY-UVA-5.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6501-SURVEY-UVA-6.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+### CS 4710: Artificial Intelligence
+
+**Project Summary:** *A reinforcement learning framework is utilized to assess the success of a variety of autonomous stock trading strategies in historical market environments*
+
+<center>
+
+<img src="images/CS-4710-UVA_1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-4710-UVA_2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-4710-UVA_3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+### CS 6111: Cloud Computing
+
+**Project Summary:** *A replication and expansion of the research presented by "AlloX: Computer Allocation in Hybrid Clusters", which develops an online, min-cost bipartite matching algorithm to schedule jobs optimally and fairly within a hybrid CPU-GPU cluster*
+
+<center>
+
+<img src="images/CS-6111-UVA-01.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6111-UVA-02.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6111-UVA-03.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6111-UVA-04.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6111-UVA-05.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6111-UVA-06.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6111-UVA-07.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6111-UVA-08.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6111-UVA-09.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-6111-UVA-10.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+### CS 4750: Database Systems
+
+**Project Summary:** *We create a MySQL database for 2020-21 NBA statistics, which allows users to select, and monitor the stats for, their favorite players and teams in the league.*
+
+Feel free to create an account on our <a href="http://cs.virginia.edu/~tpc3yw/project/login.php" target="_blank">2020-2021 NBA analytics database</a> to track player and team stats
+
+<center>
+
+Snapshot
+
+<img src="images/CS-4750-UVA.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+### CS 4501: Natural Language Processing
+
+**Project Summary:** *We develop a text-classification model to determine the Sub-Reddit page that a Reddit post originates from.*
+
+<center>
+
+<img src="images/CS-4501-UVA-1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-4501-UVA-2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-4501-UVA-3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-4501-UVA-4.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+### CS 4774: Machine Learning
+
+**Project Summary:** *We develop a model that utilizes regional demographic and economic data to predict county-level voter turnout in Virginia general elections.*
+
+<center>
+
+<img src="images/CS-4774-UVA-1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-4774-UVA-2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-4774-UVA-3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-4774-UVA-4.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/CS-4774-UVA-5.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+### STAT 4996: Capstone
+
+**Project Summary:** *We develop an auto-regressive model to predict three-year xFIP performance for MLB starting pitchers. We also create an application for users to explore our predictions and better understand how they are calculated.*
+
+Feel free to explore our <a href="https://malcolmmashig.shinyapps.io/Predicting-MLB-Pitcher-Value" target="_blank">MLB Starting Pitcher xFIP prediction application</a>
+
+<center>Snapshot
+
+<img src="images/STAT-4996-SNAPSHOT-UVA.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<br>
+
+Report
+
+<img src="images/STAT-4996-UVA-01.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-02.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-03.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-04.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-05.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-06.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-07.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-08.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-09.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-10.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-11.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-12.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-13.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-14.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-15.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-16.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-17.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-18.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/STAT-4996-UVA-19.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+
+</center>

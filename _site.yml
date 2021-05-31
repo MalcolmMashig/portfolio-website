@@ -1,0 +1,18 @@
+name: "Malcolm J. Mashig"
+output_dir: "."
+navbar:
+  title: "Malcolm J. Mashig"
+  left:
+    - text: "Course Projects"
+      href: coursework.html
+    - text: "Personal Project"
+      href: project.html
+    - text: "Resume"
+      href: resume.html
+    - text: "Other Documents"
+      href: other_docs.html
+    - text: "Contact"
+      href: index.html
+output:
+  html_document:
+    theme: sandstone

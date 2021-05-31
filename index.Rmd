@@ -1,0 +1,27 @@
+---
+title: " "
+pagetitle: "Malcolm J. Mashig"
+---
+
+## ________________________________________________________________________
+
+<img src="images/columbia.jpg" style="width:10%; border:0px solid; margin-right: 0px" align="left">
+
+<img src="images/uva.jpg" style="width:14%; border:0px solid; margin-right: 0px" align="left">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+I am currently enrolled in the MS in Computer Science program (concentrating in machine learning) at Columbia University in NYC, expecting to graduate May 2022. I received a BA in Statistics and Computer Science from the University of Virginia (UVA) in May 2021.
+
+During my time at UVA, I served as CFO for The Cavalier Daily, the student-run, financially-independent news organization at the university. I also worked as a research fellow for Research for Sustainable Commerce, a group that partners with and studies local and non-local businesses dedicated to improving their social and environmental impact.
+
+*I am actively seeking a summer 2021 internship and/or entry-level position in software engineering, data science, or artificial intelligence research. Please reach out if you know of any such opportunities or if you would simply like to connect!*
+
+<a href="https://www.linkedin.com/in/malcolm-mashig/" target="_blank">LinkedIn</a> | <a href="https://twitter.com/MalcolmMashig" target="_blank">Twitter</a> | <a href="https://github.com/MalcolmMashig" target="_blank">GitHub</a>
+
+m.mashig@columbia.edu | 201-753-1240
