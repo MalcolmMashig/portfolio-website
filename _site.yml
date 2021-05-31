@@ -5,8 +5,6 @@ navbar:
   left:
     - text: "Course Projects"
       href: coursework.html
-    - text: "Personal Project"
-      href: project.html
     - text: "Resume"
       href: resume.html
     - text: "Other Documents"
