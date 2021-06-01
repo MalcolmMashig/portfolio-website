@@ -9,7 +9,7 @@ pagetitle: "Malcolm J. Mashig"
 
 <center>
 
-<img src="images/malcolm-mashig-undergraduate-transcript.png" style="width:70%; border:1px solid; margin-right: 0px" align="center">
+<img src="images/malcolm-mashig-undergraduate-transcript.png" style="width:100%; border:1px solid; margin-right: 0px" align="center">
 
 </center>
 
@@ -17,8 +17,8 @@ pagetitle: "Malcolm J. Mashig"
 
 <center>
 
-<img src="images/statement-of-purpose-1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/statement-of-purpose-1.png" style="width:100%; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/statement-of-purpose-2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/statement-of-purpose-2.png" style="width:100%; border:1px solid; margin-right: 0px" align="middle">
 
 </center>

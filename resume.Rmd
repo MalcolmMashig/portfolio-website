@@ -9,6 +9,6 @@ pagetitle: "Malcolm J. Mashig"
 
 <center>
 
-<img src="images/malcolm-mashig-resume.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/malcolm-mashig-resume.png" style="width:100%; border:1px solid; margin-right: 0px" align="middle">
 
 </center>

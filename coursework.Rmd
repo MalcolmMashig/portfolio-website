@@ -15,17 +15,17 @@ Feel free to experiment with our <a href="https://malcolmmashig.shinyapps.io/int
 
 <center>
 
-<img src="images/CS-6501-UVA-1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-UVA-1.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-UVA-2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-UVA-2.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-UVA-3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-UVA-3.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-UVA-4.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-UVA-4.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-UVA-5.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-UVA-5.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-UVA-6.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-UVA-6.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
 </center>
 
@@ -35,17 +35,17 @@ Feel free to experiment with our <a href="https://malcolmmashig.shinyapps.io/int
 
 <center>
 
-<img src="images/CS-6501-SURVEY-UVA-1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-SURVEY-UVA-1.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-SURVEY-UVA-2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-SURVEY-UVA-2.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-SURVEY-UVA-3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-SURVEY-UVA-3.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-SURVEY-UVA-4.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-SURVEY-UVA-4.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-SURVEY-UVA-5.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-SURVEY-UVA-5.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6501-SURVEY-UVA-6.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6501-SURVEY-UVA-6.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
 </center>
 
@@ -55,11 +55,11 @@ Feel free to experiment with our <a href="https://malcolmmashig.shinyapps.io/int
 
 <center>
 
-<img src="images/CS-4710-UVA_1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4710-UVA_1.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-4710-UVA_2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4710-UVA_2.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-4710-UVA_3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4710-UVA_3.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
 </center>
 
@@ -69,25 +69,25 @@ Feel free to experiment with our <a href="https://malcolmmashig.shinyapps.io/int
 
 <center>
 
-<img src="images/CS-6111-UVA-01.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-01.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6111-UVA-02.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-02.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6111-UVA-03.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-03.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6111-UVA-04.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-04.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6111-UVA-05.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-05.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6111-UVA-06.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-06.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6111-UVA-07.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-07.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6111-UVA-08.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-08.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6111-UVA-09.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-09.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-6111-UVA-10.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-6111-UVA-10.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
 </center>
 
@@ -101,7 +101,7 @@ Feel free to create an account on our <a href="http://cs.virginia.edu/~tpc3yw/pr
 
 Snapshot
 
-<img src="images/CS-4750-UVA.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4750-UVA.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
 </center>
 
@@ -111,13 +111,13 @@ Snapshot
 
 <center>
 
-<img src="images/CS-4501-UVA-1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4501-UVA-1.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-4501-UVA-2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4501-UVA-2.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-4501-UVA-3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4501-UVA-3.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-4501-UVA-4.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4501-UVA-4.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
 </center>
 
@@ -127,15 +127,15 @@ Snapshot
 
 <center>
 
-<img src="images/CS-4774-UVA-1.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4774-UVA-1.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-4774-UVA-2.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4774-UVA-2.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-4774-UVA-3.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4774-UVA-3.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-4774-UVA-4.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4774-UVA-4.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/CS-4774-UVA-5.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/CS-4774-UVA-5.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
 </center>
 
@@ -147,48 +147,48 @@ Feel free to explore our <a href="https://malcolmmashig.shinyapps.io/Predicting-
 
 <center>Snapshot
 
-<img src="images/STAT-4996-SNAPSHOT-UVA.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-SNAPSHOT-UVA.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
 <br>
 
 Report
 
-<img src="images/STAT-4996-UVA-01.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-01.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-02.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-02.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-03.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-03.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-04.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-04.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-05.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-05.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-06.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-06.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-07.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-07.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-08.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-08.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-09.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-09.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-10.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-10.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-11.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-11.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-12.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-12.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-13.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-13.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-14.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-14.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-15.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-15.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-16.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-16.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-17.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-17.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-18.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-18.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
-<img src="images/STAT-4996-UVA-19.png" style="width:70%; border:1px solid; margin-right: 0px" align="middle">
+<img src="images/STAT-4996-UVA-19.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
 
 </center>
