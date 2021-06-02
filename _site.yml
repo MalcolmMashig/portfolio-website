@@ -5,12 +5,10 @@ navbar:
   left:
     - text: "Course Projects"
       href: coursework.html
-    - text: "Research Group Projects"
-      href: research-group-projects.html
-    - text: "Resume"
+    - text: "Other Projects"
+      href: other-projects.html
+    - text: "Resume+"
       href: resume.html
-    - text: "Other Documents"
-      href: other_docs.html
     - text: "Contact"
       href: index.html
 output:

@@ -289,13 +289,10 @@ $(document).ready(function () {
   <a href="coursework.html">Course Projects</a>
 </li>
 <li>
-  <a href="research-group-projects.html">Research Group Projects</a>
+  <a href="other-projects.html">Other Projects</a>
 </li>
 <li>
-  <a href="resume.html">Resume</a>
-</li>
-<li>
-  <a href="other_docs.html">Other Documents</a>
+  <a href="resume.html">Resume+</a>
 </li>
 <li>
   <a href="index.html">Contact</a>
@@ -496,7 +493,7 @@ monthly_sales %&gt;%
     axis.text.x = element_text(angle = 90),
     axis.title.x = element_blank()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <hr />
 </div>
 <div id="total-customers-acquired" class="section level4">
@@ -534,7 +531,7 @@ monthly_customers_acquired %&gt;%
     axis.text.x = element_text(angle = 90),
     axis.title.x = element_blank()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <hr />
 </div>
 <div id="customer-acquisition-cost-cac" class="section level4">
@@ -576,7 +573,7 @@ monthly_CAC %&gt;%
     legend.position = &quot;top&quot;,
     legend.title = element_blank()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <hr />
 </div>
 <div id="distribution-of-spend-per-purchase" class="section level4">
@@ -590,7 +587,7 @@ monthly_CAC %&gt;%
     x = &quot;Purchase Amount&quot;,
     y = &quot;Proportion of All Transactions&quot;
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <pre class="r"><code>transaction_east %&gt;% 
   filter(price_charged &lt; 1000) %&gt;% 
   mutate(purchase = cut_interval(price_charged, length = 100)) %&gt;% 
@@ -605,7 +602,7 @@ monthly_CAC %&gt;%
   scale_y_continuous(
     labels = scales::dollar_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
 <hr />
 </div>
 <div id="initial-versus-repeat-sales-volume" class="section level4">
@@ -649,7 +646,7 @@ monthly_sales_new_repeat_cohort %&gt;%
   scale_y_continuous(
     labels = scales::dollar_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <pre class="r"><code># Transactions
 monthly_sales_new_repeat_cohort %&gt;% 
   ggplot(aes(month, n_transactions, fill = customer_type)) +
@@ -673,7 +670,7 @@ monthly_sales_new_repeat_cohort %&gt;%
   scale_y_continuous(
     labels = scales::comma_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-7-2.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-7-2.png" width="672" /></p>
 <pre class="r"><code># Percent of Sales
 monthly_sales_new_repeat_cohort %&gt;% 
   ggplot(aes(month, pct_of_sales, fill = customer_type)) +
@@ -694,7 +691,7 @@ monthly_sales_new_repeat_cohort %&gt;%
     subtitle = &quot;A customer is \&quot;new\&quot; in month of first transaction (cohort-based)&quot;,
     y = &quot;Percent of Sales ( %)&quot;
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-7-3.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-7-3.png" width="672" /></p>
 <hr />
 </div>
 <div id="initial-versus-repeat-average-order-value-aov" class="section level4">
@@ -734,7 +731,7 @@ monthly_AOV_new_repeat_cohort %&gt;%
   scale_y_continuous(
     labels = scales::dollar_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <hr />
 </div>
 <div id="sales-and-aov-by-source-region" class="section level4">
@@ -775,7 +772,7 @@ monthly_AOV_locations %&gt;%
   scale_y_continuous(
     labels = scales::dollar_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <pre class="r"><code># Sales Pct
 monthly_AOV_locations %&gt;% 
   ggplot(aes(month, pct_of_sales, fill = location_name)) +
@@ -795,7 +792,7 @@ monthly_AOV_locations %&gt;%
     legend.position = &quot;top&quot;,
     legend.title = element_blank()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-9-2.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-9-2.png" width="672" /></p>
 <pre class="r"><code># AOV: compare to number of items
 monthly_AOV_locations %&gt;% 
   ggplot(aes(month, AOV, color = location_name)) +
@@ -819,7 +816,7 @@ monthly_AOV_locations %&gt;%
   scale_y_continuous(
     labels = scales::dollar_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-9-3.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-9-3.png" width="672" /></p>
 <hr />
 </div>
 <div id="cohorted-sales-the-c3" class="section level4">
@@ -872,7 +869,7 @@ c3 %&gt;%
   scale_y_continuous(
     labels = scales::dollar_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <pre class="r"><code># revenue retention
 # quarter-level
 
@@ -901,7 +898,7 @@ c3 %&gt;%
   scale_y_continuous(
     labels = scales::dollar_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-10-2.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-10-2.png" width="672" /></p>
 <pre class="r"><code># Stacked (remove extra)
 monthly_cohort_sales &lt;- transaction_east %&gt;% 
   group_by(customer_id) %&gt;% 
@@ -940,7 +937,7 @@ monthly_cohort_sales %&gt;%
   scale_y_continuous(
     labels = scales::dollar_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-10-3.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-10-3.png" width="672" /></p>
 <pre class="r"><code>annual_cohort_sales &lt;- transaction_east %&gt;% 
   group_by(customer_id) %&gt;% 
   mutate(
@@ -970,7 +967,7 @@ annual_cohort_sales %&gt;%
   scale_y_continuous(
     labels = scales::dollar_format()
   )</code></pre>
-<p><img src="research-group-projects_files/figure-html/unnamed-chunk-10-4.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/unnamed-chunk-10-4.png" width="672" /></p>
 </div>
 </div>
 <div id="google-trends-r-guide" class="section level3">
@@ -1181,7 +1178,7 @@ font_import(pattern = &#39;product-sans.ttf&#39;, prompt=FALSE)</code></pre>
        caption = &quot;https://goo.gl/XV8kHd&quot;)
   
 lg</code></pre>
-<p><img src="research-group-projects_files/figure-html/basic-line-graph-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/basic-line-graph-1.png" width="672" /></p>
 <p>It still looks far different than the UI. The solution is the <code>ggtech</code> package. There is a problem, however, because the package only specifies four google colors while our line graph contains five different search terms with their unique lines. If you look back at the UI, the fifth color is a shade of purple. If you take a screenshot isolating the purple line and then upload it <a href="https://html-color-codes.info/colors-from-image/" target="blank">here</a>, the program will spit out the exact color code. I got <em>#8F39AA</em> and you should get something similar. Now we need to update one of the package’s function (found <a href="https://github.com/ricardo-bion/ggtech/blob/master/R/scale_color_tech.R" target="blank">here</a>) to add the fifth color to the google theme. Then we can use <code>ggtech</code> to create the ideal line graph.</p>
 <pre class="r"><code>scale_color_tech &lt;- function(theme=&quot;airbnb&quot;, tech_key = list(
   airbnb = c(&quot;#FF5A5F&quot;, &quot;#FFB400&quot;, &quot;#007A87&quot;,  &quot;#FFAA91&quot;, &quot;#7B0051&quot;),
@@ -1206,7 +1203,7 @@ line_graph &lt;- lg +
   scale_x_date(date_labels = &quot;%m/%Y&quot;, date_breaks = &quot;2 months&quot;)
 
 line_graph</code></pre>
-<p><img src="research-group-projects_files/figure-html/google-line-graph-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/google-line-graph-1.png" width="672" /></p>
 <p><strong><u><em>Bar Graph:</em></u></strong></p>
 <p>First, summarize the average <code>relative_interest</code> for each search term and round to avoid decimals. The <code>group_by</code> and <code>summarise</code> functions will almost always be used together.</p>
 <pre class="r"><code>avg_trend &lt;- google_trends %&gt;% 
@@ -1226,7 +1223,7 @@ avg_trend</code></pre>
   geom_bar(stat = &#39;identity&#39;) +
   labs(x = &#39;Average Interest&#39;)
 bg</code></pre>
-<p><img src="research-group-projects_files/figure-html/basic-bar-graph-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/basic-bar-graph-1.png" width="672" /></p>
 <p>To add the fifth color this time, we will save all of Google’s color codes (above) in a list and use the fill argument to deploy them.</p>
 <pre class="r"><code>google_colors &lt;- c(&quot;#5380E4&quot;, &quot;#E12A3C&quot;, &quot;#FFBF03&quot;, &quot;#00B723&quot;, &quot;#8F39AA&quot;)
 bar_graph &lt;- bg +
@@ -1239,11 +1236,11 @@ bar_graph &lt;- bg +
         axis.ticks.x = element_blank()) + 
   ylim(0, 100)
 bar_graph</code></pre>
-<p><img src="research-group-projects_files/figure-html/google-bar-graph-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/google-bar-graph-1.png" width="672" /></p>
 <p><strong><u><em>Copying the UI</em></u></strong></p>
 <p>Now we can arrange both graphs side by side as they appear in the UI. It did require some guessing-and-checking in order to decide the scaling that was best.</p>
 <pre class="r"><code>ui_copy &lt;- grid.arrange(bar_graph, line_graph, ncol = 2, widths = c(1, 6))</code></pre>
-<p><img src="research-group-projects_files/figure-html/ui-replication-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/ui-replication-1.png" width="672" /></p>
 <pre class="r"><code># ggsave(&quot;ui_copy.png&quot;, ui_copy)</code></pre>
 <p>Here is the example UI again for comparision:</p>
 <p><img src="https://raw.githubusercontent.com/MalcolmMashig/google-trends/master/google-trends-ui.png" /></p>
@@ -1340,7 +1337,7 @@ cor(y[, 2], y[, 6]) </code></pre>
 <h4><em>Corner Juice</em> vs. <em>TJL</em></h4>
 <p>Google Trends allows a business to track their search interest over time and monitor the effects of changes they make or press they get. Beyond that, it allows a business to benchmark against competition in terms of consumer interest.</p>
 <p>I have repeated the <code>gtrendsR</code> process but this time with just <em>“juice laundry”</em> and <em>“corner juice”</em> (the competition) as search terms. The same <code>ggplot</code> process (with minor changes tailored to this search) yields this:</p>
-<p><img src="research-group-projects_files/figure-html/tjl-vs-cj-ui-replication-1.png" width="672" /></p>
+<p><img src="other-projects_files/figure-html/tjl-vs-cj-ui-replication-1.png" width="672" /></p>
 <p>You can find this web UI at the following link:</p>
 <pre><code>## [1] &quot;https://trends.google.com/trends/explore?date=2016-10-09%202018-12-31&amp;geo=US&amp;q=%22corner%20juice%22,%22juice%20laundry%22&quot;</code></pre>
 </div>

@@ -3,12 +3,32 @@ title: " "
 pagetitle: "Malcolm J. Mashig"
 ---
 
-## ________________________________________________________________________
+## ________________________________________________________________________ {.tabset .tabset-fade}
+
+### Resume
 
 <a href="https://github.com/MalcolmMashig/portfolio-website/blob/main/images/malcolm-mashig-resume.pdf" target="_blank">Download on GitHub</a>
 
 <center>
 
 <img src="images/malcolm-mashig-resume.png" style="width:100%; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+### Undergraduate Transcript
+
+<center>
+
+<img src="images/malcolm-mashig-undergraduate-transcript.png" style="width:100%; border:1px solid; margin-right: 0px" align="center">
+
+</center>
+
+### Statement of Purpose (in application to Master's program)
+
+<center>
+
+<img src="images/statement-of-purpose-1.png" style="width:100%; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/statement-of-purpose-2.png" style="width:100%; border:1px solid; margin-right: 0px" align="middle">
 
 </center>
