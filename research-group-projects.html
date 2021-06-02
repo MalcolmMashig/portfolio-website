@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Malcolm J. Mashig</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Malcolm J. Mashig</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="coursework.html">Course Projects</a>
+</li>
+<li>
+  <a href="research-group-projects.html">Research Group Projects</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+<li>
+  <a href="other_docs.html">Other Documents</a>
+</li>
+<li>
+  <a href="index.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+
+<div id="section" class="section level2 tabset tabset-fade">
+<h2>________________________________________________________________________</h2>
+<div id="summarizing-buyer-behavior" class="section level3">
+<h3>Summarizing Buyer Behavior</h3>
+<p><em>This analysis was put together as course material for GCOM 7140: Customer Analytics, a graduate course offered in the M.S. in Commerce program at the University of Virginia’s McIntire School of Commerce.</em></p>
+<hr />
+<p>The tweet below – the attached slide deck specifically – inspires the following analysis of a sample dataset: four years of superstore sales, which can be downloaded <a href="https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls" target="_blank">here</a>. This type of customer lifetime value (CLV) analysis can be applied to any sales dataset, so long as it indicates the timestamp, customer and charge of each sale. Some sections of the analysis also require the indication of sale location and some measure of customer acquisition cost (CAC), such as discount as is used here or marketing spend which is more ideal.</p>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+[1/4] With all the C3's disclosed in S-1's last week, ever wondered how easy it was to create a C3 from a transaction log? <br><br>You're in luck: here's a deck I cobbled together that shows you how to generate this and many other summaries of customer activity: <a href="https://t.co/RfkcNJ1kWf">https://t.co/RfkcNJ1kWf</a>
+</p>
+— Daniel McCarthy (<span class="citation">@d_mccar</span>) <a href="https://twitter.com/d_mccar/status/1299972436117643264?ref_src=twsrc%5Etfw">August 30, 2020</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr />
+<p>A snapshot of the raw data:</p>
+<pre class="r"><code>library(tidyverse)
+library(lubridate)
+
+sales_raw &lt;- read_csv(&quot;sample-sales-data.csv&quot;)
+
+sales_raw %&gt;% 
+  head(6) %&gt;% 
+  select(`Order Date`, `Customer ID`, Region, 
+         `Product Name`, Quantity, Sales) %&gt;% 
+  knitr::kable()</code></pre>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="10%" />
+<col width="6%" />
+<col width="57%" />
+<col width="7%" />
+<col width="7%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Order Date</th>
+<th align="left">Customer ID</th>
+<th align="left">Region</th>
+<th align="left">Product Name</th>
+<th align="right">Quantity</th>
+<th align="right">Sales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">11/8/16</td>
+<td align="left">CG-12520</td>
+<td align="left">South</td>
+<td align="left">Bush Somerset Collection Bookcase</td>
+<td align="right">2</td>
+<td align="right">261.9600</td>
+</tr>
+<tr class="even">
+<td align="left">11/8/16</td>
+<td align="left">CG-12520</td>
+<td align="left">South</td>
+<td align="left">Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back</td>
+<td align="right">3</td>
+<td align="right">731.9400</td>
+</tr>
+<tr class="odd">
+<td align="left">6/12/16</td>
+<td align="left">DV-13045</td>
+<td align="left">West</td>
+<td align="left">Self-Adhesive Address Labels for Typewriters by Universal</td>
+<td align="right">2</td>
+<td align="right">14.6200</td>
+</tr>
+<tr class="even">
+<td align="left">10/11/15</td>
+<td align="left">SO-20335</td>
+<td align="left">South</td>
+<td align="left">Bretford CR4500 Series Slim Rectangular Table</td>
+<td align="right">5</td>
+<td align="right">957.5775</td>
+</tr>
+<tr class="odd">
+<td align="left">10/11/15</td>
+<td align="left">SO-20335</td>
+<td align="left">South</td>
+<td align="left">Eldon Fold ’N Roll Cart System</td>
+<td align="right">2</td>
+<td align="right">22.3680</td>
+</tr>
+<tr class="even">
+<td align="left">6/9/14</td>
+<td align="left">BH-11710</td>
+<td align="left">West</td>
+<td align="left">Eldon Expressions Wood and Plastic Desk Accessories, Cherry Wood</td>
+<td align="right">7</td>
+<td align="right">48.8600</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code># Preprocess the data and set aside sales from the eastern region of the United
+# States.
+
+transaction &lt;- sales_raw %&gt;% 
+  mutate(
+      discount_given = (Sales / (1 - Discount)) - Sales,
+      ordered_at = mdy(`Order Date`),
+      location_name = Region,
+      price_charged = Sales,
+      customer_id = `Customer ID`,
+      month = ordered_at %&gt;% floor_date(unit = &quot;month&quot;) %&gt;% ymd(),
+      quarter = ordered_at %&gt;% floor_date(unit = &quot;quarter&quot;) %&gt;% ymd(),
+      year = ordered_at %&gt;% floor_date(unit = &quot;year&quot;) %&gt;% ymd()
+    ) %&gt;% 
+    select(
+      ordered_at, 
+      location_name, 
+      customer_id, 
+      price_charged, 
+      discount_given,
+      month, quarter, year
+    ) %&gt;% 
+    arrange(ordered_at)
+
+transaction_east &lt;- transaction %&gt;% 
+  filter(location_name == &quot;East&quot;)</code></pre>
+<p>The aim is to summarize (and visualize) buyer behavior with the following key performance indicators (KPIs):</p>
+<ul>
+<li>Monthly sales over time</li>
+<li>Total customers acquired</li>
+<li>Customer acquisition cost (CAC)</li>
+<li>Distribution of spend per purchase</li>
+<li>Initial versus repeat sales volume</li>
+<li>Initial versus repeat average order value (AOV)</li>
+<li>Sales and AOV by source</li>
+<li>Cohorted sales (the “C3”)</li>
+</ul>
+<p>And the hope is that these indicators provide us with a better understanding of:</p>
+<ul>
+<li>Growth</li>
+<li>Retention</li>
+<li>Heterogeneity</li>
+</ul>
+<hr />
+<div id="monthly-sales-over-time" class="section level4">
+<h4>Monthly Sales Over Time</h4>
+<pre class="r"><code>monthly_sales &lt;- transaction_east %&gt;% 
+  group_by(month) %&gt;% 
+  summarize(sales = sum(price_charged))
+
+monthly_sales %&gt;% 
+  ggplot(aes(month, sales, label = scales::dollar(sales))) +
+  geom_bar(stat = &quot;identity&quot;) +
+  geom_text(
+    size = 3,
+    angle = 90,
+    nudge_y = 7000
+  ) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  scale_y_continuous(
+    labels = scales::dollar_format(),
+    limits = c(0, 60000),
+    breaks = seq(0, 60000, 10000)
+  ) +
+  labs(
+    y = &quot;Sales&quot;, 
+    title = &quot;Monthly spend over time (for east region)&quot;
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<hr />
+</div>
+<div id="total-customers-acquired" class="section level4">
+<h4>Total Customers Acquired</h4>
+<pre class="r"><code>monthly_customers_acquired &lt;- transaction_east %&gt;% 
+  distinct(customer_id, .keep_all = TRUE) %&gt;% 
+  group_by(month) %&gt;% 
+  summarize(customers_acquired = n())
+
+monthly_customers_acquired %&gt;% 
+  ggplot(
+    aes(month, customers_acquired, 
+        label = customers_acquired)
+  ) +
+  geom_bar(stat = &quot;identity&quot;) +
+  geom_text(
+    size = 3,
+    angle = 90,
+    nudge_y = 3
+  ) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  scale_y_continuous(
+    labels = scales::comma_format(),
+    limits = c(0, 50)
+  ) +
+  labs(
+    y = &quot;Customers Acquired&quot;, 
+    title = &quot;Total customers acquired over time (for east region)&quot;
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<hr />
+</div>
+<div id="customer-acquisition-cost-cac" class="section level4">
+<h4>Customer Acquisition Cost (CAC)</h4>
+<pre class="r"><code>monthly_CAC &lt;- transaction_east %&gt;% 
+  group_by(month) %&gt;%
+  summarize(total_discounts = sum(discount_given)) %&gt;% 
+  inner_join(monthly_customers_acquired) %&gt;% 
+  mutate(
+    CAC = round(total_discounts / customers_acquired, 2)
+  )
+
+monthly_CAC %&gt;% 
+  ggplot(
+    aes(month, CAC / 100)
+  ) +
+  geom_bar(aes(y = customers_acquired, size = &quot;Customers Acquired&quot;), 
+           stat = &quot;identity&quot;) +
+  geom_line(aes(color = &quot;CAC&quot;), size = 2) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  scale_y_continuous(
+    labels = scales::comma_format(),
+    limits = c(0, 53),
+    sec.axis = sec_axis(trans = ~.*100, name = &quot;CAC&quot;, 
+                         labels = scales::dollar_format())
+  ) +
+  labs(
+    y = &quot;Customers Acquired&quot;, 
+    title = &quot;CAC vs total customers acquired over time (for east region)&quot;,
+    subtitle = &quot;Discounts used as a measure of CAC&quot;
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank(),
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<hr />
+</div>
+<div id="distribution-of-spend-per-purchase" class="section level4">
+<h4>Distribution of Spend Per Purchase</h4>
+<pre class="r"><code>transaction_east %&gt;% 
+  ggplot(aes(price_charged)) +
+  geom_histogram(aes(y = ..density..), bins = 25) +
+  xlim(0, 1000) +
+  labs(
+    title = &quot;Distribution of spend given purchase&quot;,
+    x = &quot;Purchase Amount&quot;,
+    y = &quot;Proportion of All Transactions&quot;
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>transaction_east %&gt;% 
+  filter(price_charged &lt; 1000) %&gt;% 
+  mutate(purchase = cut_interval(price_charged, length = 100)) %&gt;% 
+  count(purchase, wt = price_charged) %&gt;% 
+  ggplot(aes(purchase, n)) +
+  geom_bar(stat = &quot;identity&quot;) +
+  labs(
+    title = &quot;Distribution of total revenue across different purchase amounts&quot;,
+    x = &quot;Purchase Amount Range ($)&quot;, 
+    y = &quot;Revenue&quot;
+  ) +
+  scale_y_continuous(
+    labels = scales::dollar_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
+<hr />
+</div>
+<div id="initial-versus-repeat-sales-volume" class="section level4">
+<h4>Initial Versus Repeat Sales Volume</h4>
+<pre class="r"><code>monthly_sales_new_repeat_cohort &lt;- transaction_east %&gt;% 
+  group_by(customer_id) %&gt;% 
+  mutate(
+    month_acquired = first(month),
+    customer_type = if_else(
+      month == month_acquired, &quot;new&quot;, &quot;repeat&quot;
+    )
+  ) %&gt;% 
+  group_by(month, customer_type) %&gt;% 
+  summarize(sales = sum(price_charged),
+            n_transactions = n()) %&gt;% 
+  group_by(month) %&gt;% 
+  mutate(
+    pct_of_sales = sales / sum(sales) * 100
+  )
+
+# Sales
+monthly_sales_new_repeat_cohort %&gt;% 
+  ggplot(aes(month, sales, fill = customer_type)) +
+  geom_bar(stat = &quot;identity&quot;) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank(),
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank()
+  ) +
+  labs(
+    title = &quot;Total sales from repeat vs new cohort customers&quot;,
+    subtitle = &quot;A customer is \&quot;new\&quot; in month of first transaction (cohort-based)&quot;,
+    y = &quot;Sales&quot;
+  ) +
+  scale_y_continuous(
+    labels = scales::dollar_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="r"><code># Transactions
+monthly_sales_new_repeat_cohort %&gt;% 
+  ggplot(aes(month, n_transactions, fill = customer_type)) +
+  geom_bar(stat = &quot;identity&quot;) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank(),
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank()
+  ) +
+  labs(
+    title = &quot;Total transactions from repeat vs new cohort customers&quot;,
+    subtitle = &quot;A customer is \&quot;new\&quot; in month of first transaction (cohort-based)&quot;,
+    y = &quot;Number of Transactions&quot;
+  ) +
+  scale_y_continuous(
+    labels = scales::comma_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-7-2.png" width="672" /></p>
+<pre class="r"><code># Percent of Sales
+monthly_sales_new_repeat_cohort %&gt;% 
+  ggplot(aes(month, pct_of_sales, fill = customer_type)) +
+  geom_bar(stat = &quot;identity&quot;) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank(),
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank()
+  ) +
+  labs(
+    title = &quot;Total sales from repeat vs new cohort customers (% of total)&quot;,
+    subtitle = &quot;A customer is \&quot;new\&quot; in month of first transaction (cohort-based)&quot;,
+    y = &quot;Percent of Sales ( %)&quot;
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-7-3.png" width="672" /></p>
+<hr />
+</div>
+<div id="initial-versus-repeat-average-order-value-aov" class="section level4">
+<h4>Initial Versus Repeat Average Order Value (AOV)</h4>
+<pre class="r"><code>monthly_AOV_new_repeat_cohort &lt;- transaction_east %&gt;% 
+  group_by(customer_id) %&gt;% 
+  mutate(
+    month_acquired = first(month),
+    customer_type = if_else(
+      month == month_acquired, &quot;new&quot;, &quot;repeat&quot;
+    )
+  ) %&gt;% 
+  group_by(month, customer_type) %&gt;% 
+  summarize(
+    AOV = mean(price_charged)
+  )
+
+monthly_AOV_new_repeat_cohort %&gt;% 
+  ggplot(aes(month, AOV, color = customer_type)) +
+  geom_line(size = 2) +
+  geom_smooth(method = &quot;lm&quot;, se = FALSE, linetype = 2, size = 0.5) +
+  labs(
+    title = &quot;Initial vs repeat cohort AOV over time&quot;,
+    y = &quot;Average Order Value (AOV)&quot;
+  ) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank(),
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank()
+  ) +
+  scale_y_continuous(
+    labels = scales::dollar_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<hr />
+</div>
+<div id="sales-and-aov-by-source-region" class="section level4">
+<h4>Sales and AOV by Source (Region)</h4>
+<pre class="r"><code>monthly_AOV_locations &lt;- transaction %&gt;% 
+  mutate(month = ordered_at %&gt;% floor_date(unit = &quot;month&quot;) %&gt;% ymd()) %&gt;% 
+  group_by(month, location_name) %&gt;% 
+  summarize(
+    sales = sum(price_charged),
+    AOV = mean(price_charged)
+  ) %&gt;% 
+  group_by(month) %&gt;% 
+  mutate(
+    pct_of_sales = sales / sum(sales) * 100
+  )
+
+# Sales
+monthly_AOV_locations %&gt;% 
+  ggplot(aes(month, sales, color = location_name)) +
+  geom_line(size = 0.3) +
+  geom_smooth(se = FALSE, size = 2) +
+  ylim(0000, 40000) +
+  labs(
+    title = &quot;Sales by source&quot;,
+    y = &quot;Sales&quot;
+  ) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank(),
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank()
+  ) +
+  scale_y_continuous(
+    labels = scales::dollar_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<pre class="r"><code># Sales Pct
+monthly_AOV_locations %&gt;% 
+  ggplot(aes(month, pct_of_sales, fill = location_name)) +
+  geom_bar(stat = &quot;identity&quot;) +
+  labs(
+    title = &quot;Sales by source, % of total&quot;,
+    y = &quot;Percent of Total Sales&quot;
+  ) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank(),
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-9-2.png" width="672" /></p>
+<pre class="r"><code># AOV: compare to number of items
+monthly_AOV_locations %&gt;% 
+  ggplot(aes(month, AOV, color = location_name)) +
+  geom_line(size = 0.3) +
+  geom_smooth(se = FALSE, linetype = 1, size = 2) +
+  labs(
+    title = &quot;AOV by source&quot;,
+    y = &quot;Average Order Value (AOV) ($)&quot;
+  ) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 90),
+    axis.title.x = element_blank(),
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank()
+  ) +
+  scale_y_continuous(
+    labels = scales::dollar_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-9-3.png" width="672" /></p>
+<hr />
+</div>
+<div id="cohorted-sales-the-c3" class="section level4">
+<h4>Cohorted Sales (the “C3”)</h4>
+<pre class="r"><code>c3 &lt;- function(measure_freq, acquisition_freq = &quot;yearly&quot;) {
+  cohorts &lt;- transaction_east %&gt;% 
+    group_by(customer_id) %&gt;% 
+    mutate(
+      acquired = floor_date(min(ordered_at), acquisition_freq)
+    ) %&gt;% 
+    ungroup() %&gt;% 
+    group_by(acquired) %&gt;% 
+    mutate(
+      revenue = cumsum(price_charged)
+    ) %&gt;% 
+    ungroup() %&gt;% 
+    group_by({{measure_freq}}) %&gt;% 
+    distinct(acquired, .keep_all = TRUE) %&gt;% 
+    arrange({{measure_freq}}, acquired) %&gt;% 
+    mutate(
+      ARR = cumsum(revenue),
+      lag_arr = if_else(is.na(lag(ARR)), 0, lag(ARR))
+    ) %&gt;% 
+    ungroup()
+}
+
+c3 &lt;- c3(measure_freq = year, acquisition_freq = &quot;yearly&quot;)
+
+c3 %&gt;% 
+  ggplot(aes(month)) + 
+  geom_ribbon(
+    aes(ymin = lag_arr, ymax = ARR, fill = factor(year(acquired)))
+  ) +
+  theme(
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  labs(
+    title = &quot;Annual Recurring Revenue&quot;,
+    subtitle = &quot;By Annual Cohort&quot;,
+    y = &quot;Cumulative Revenue&quot;
+  ) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  scale_y_continuous(
+    labels = scales::dollar_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code># revenue retention
+# quarter-level
+
+# Non-cumulative (for month)
+c3 %&gt;% 
+  group_by(acquired) %&gt;% 
+  mutate(
+    months = time_length(
+      interval(acquired, month),
+      unit = &quot;month&quot;
+    ) %&gt;% ceiling(),
+    months = months - min(months)
+  ) %&gt;% 
+  ungroup() %&gt;% 
+  ggplot(aes(months, revenue, color = factor(year(acquired)))) + 
+  geom_line() +
+  theme(
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank()
+  ) +
+  labs(
+    title = &quot;Cohort Revenue Over Time&quot;,
+    y = &quot;Revenue&quot;,
+    x = &quot;Months&quot;
+  ) +
+  scale_y_continuous(
+    labels = scales::dollar_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-10-2.png" width="672" /></p>
+<pre class="r"><code># Stacked (remove extra)
+monthly_cohort_sales &lt;- transaction_east %&gt;% 
+  group_by(customer_id) %&gt;% 
+  mutate(
+    acquired = floor_date(min(ordered_at), &quot;yearly&quot;)
+  ) %&gt;% 
+  ungroup() %&gt;% 
+  group_by(acquired, month) %&gt;% 
+  summarize(
+    sales = sum(price_charged)
+  )
+
+monthly_cohort_sales %&gt;% 
+  ggplot() +
+  geom_area(
+    aes(month, sales, fill = factor(year(acquired))),
+    position = position_stack(reverse = TRUE)
+  )  +
+  theme(
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  labs(
+    title = &quot;Monthly Sales by Cohort&quot;,
+    y = &quot;Revenue&quot;
+  ) +
+  scale_x_date(
+    date_breaks = &quot;1 month&quot;, 
+    date_labels =  &quot;%b %Y&quot;,
+    expand = c(0.01, 0.01)
+  ) +
+  # geom_line(data = monthly_sales, aes(x = month, y = sales),
+  #           linetype = 2) +
+  scale_y_continuous(
+    labels = scales::dollar_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-10-3.png" width="672" /></p>
+<pre class="r"><code>annual_cohort_sales &lt;- transaction_east %&gt;% 
+  group_by(customer_id) %&gt;% 
+  mutate(
+    acquired = floor_date(min(ordered_at), &quot;yearly&quot;)
+  ) %&gt;% 
+  ungroup() %&gt;% 
+  group_by(acquired, year) %&gt;% 
+  summarize(
+    sales = sum(price_charged)
+  )
+
+annual_cohort_sales %&gt;% 
+  ggplot() +
+  geom_bar(
+    aes(year, sales, fill = factor(year(acquired))),
+    stat = &quot;identity&quot;
+  )  +
+  theme(
+    legend.position = &quot;top&quot;,
+    legend.title = element_blank(),
+    axis.title.x = element_blank()
+  ) +
+  labs(
+    title = &quot;Monthly Sales by Cohort&quot;,
+    y = &quot;Revenue&quot;
+  ) +
+  scale_y_continuous(
+    labels = scales::dollar_format()
+  )</code></pre>
+<p><img src="research-group-projects_files/figure-html/unnamed-chunk-10-4.png" width="672" /></p>
+</div>
+</div>
+<div id="google-trends-r-guide" class="section level3">
+<h3>Google Trends R Guide</h3>
+<p><em>This guide was put together as course material for GCOM 7140: Customer Analytics, a graduate course offered in the M.S. in Commerce program at the University of Virginia’s McIntire School of Commerce.</em></p>
+<hr />
+<div id="overview" class="section level4">
+<h4>Overview</h4>
+<p>First and foremost, you must understand what <em>Google Trends</em> is, how it retrieves data, what that data means, and what you can gain from it.</p>
+<p>Then you can start to use it, first through the User Interface (UI) found <a href="https://trends.google.com/trends/?geo=US" target="blank">here</a> and later through the <code>gtrendsR</code> package.</p>
+<p>The benefits of using an R package are numerous and will become more and more apparent throughout this guide. To summarize, an R package allows your analysis to be more <em>intelligent</em>, <em>reproducible</em>, and <em>programmatic</em>.</p>
+<p>We will walk you through using Google Trends, pointing out some nuances along the way, and then we will show you how to generate the same exact data (and even the same visuals) with the <code>gtrendsR</code> package. We will apply everything to <a href="https://www.thejuicelaundry.com" target="blank"><em>The Juice Laundry</em></a> (TJL), demonstrating methods to extract data that is most useful and most accurate, and comparing that data to local competition, namely <em>Corner Juice</em>.</p>
+<hr />
+</div>
+<div id="understanding-google-trends" class="section level4">
+<h4>Understanding <em>Google Trends</em></h4>
+<p>According to the <em>Google Trends Help</em> page…</p>
+<p><em>Google Trends</em> data is an unbiased sample of Google search data:</p>
+<ul>
+<li><p>Only a percentage of searches are used to compile Trends data.</p></li>
+<li><p>Samples are refreshed every day and so data from one day with differ slightly from data (with the same parameters) from another.</p></li>
+</ul>
+<p>Search results are proportionate to the time and location of a search (commonly referred to as a query) by the following process:</p>
+<ul>
+<li><p>Each data point is divided by the total searches of the geography and time range it represents to compare relative popularity. Otherwise, places with the most search volume would always be ranked highest.</p></li>
+<li><p>The resulting numbers (what I will refer to as <code>relative_interest</code>) are then scaled on a range of 0 to 100 based on a topic’s proportion to all searches on all topics.</p></li>
+<li><p>Different regions that show the same search interest for a term don’t always have the same total search volumes.</p></li>
+</ul>
+<p>Some data is excluded:</p>
+<ul>
+<li><p>Searches made by very few people: Trends only shows data for popular terms, so search terms with low volume appear as “0.”</p></li>
+<li><p>Duplicate searches: Trends eliminates repeated searches from the same person over a short period of time.</p></li>
+<li><p>Special characters: Trends filters out queries with apostrophes and other special characters.</p></li>
+</ul>
+<p>The uses for <em>Google Trends</em> are plentiful. As <a href="https://www.bruceclay.com/newsletter/volume120/why-use-google-trends.htm" target="blank">bruceclay.com</a> highlights…</p>
+<ul>
+<li><p>Google Trends offers a multidimensional view of queries and how they have evolved as a result of factors like seasonality, geographic location, and media coverage.</p></li>
+<li><p>Data provided as relative popularity over time – not total search volume – can provide an apples to apples idea of query popularity.</p></li>
+<li><p>Graphed media coverage incidents help marketers see direct correlations between media coverage and spikes in interest.</p></li>
+</ul>
+<p>Along the lines of what this guide will show you, <em>Google Trends</em> is most practical for <em>benchmarking against competitors</em> and <em>understanding emerging trends</em> for a business or an industry.</p>
+<hr />
+</div>
+<div id="navigating-the-user-interface-ui" class="section level4 tabset">
+<h4>Navigating the User Interface (UI)</h4>
+<p>If you do not already have it open, go to <a href="https://trends.google.com/trends/?geo=US" target="blank">Google Trends</a>.</p>
+<p><strong><u><em>Step 1:</em></u></strong> Enter <em>“juice laundry”</em> (in quotes) as your search term. Then change <em>‘Past 12 Months’</em> to a custom time range from October 9, 2016 (10-9-2016) to the end of 2018 (12-31-2018). These dates coincide with the time period of the <code>thejuicelaundry</code> package’s <em>Square</em> transaction data.</p>
+<p>Notice that you can also change the location, category, and search type (web, image, etc.) parameters, but leave them alone.</p>
+<p><strong><u><em>Step 2:</em></u></strong> Enter <em>“Juice Laundry”</em> (in quotes and capitalized this time) as a second search term.</p>
+<p>Both terms should say <em>‘search term’</em> under them. You will notice that only the red line shows. This is because the <strong>search terms are case insensitive</strong> and the trendlines are identical.</p>
+<p><strong><u><em>Step 3:</em></u></strong> Replace the second search term with <em>“the juice laundry”</em> (in quotes).</p>
+<p>The resulting trendlines will be unique, displaying generally greater search interest for the search term without <em>“the”</em> (an additional restriction) in them – which makes sense. Take note of how the interest over time for the existing trendline (the blue) shrinks as you add the new search term. Remember that this is because <strong>search interest for one term is relative to the search interest for another</strong>.</p>
+<p><strong><u><em>Step 4:</em></u></strong> Add <em>juice laundry</em> (not in quotes) and <em>the juice laundry</em> (not in quotes), in that order, as two more search terms.</p>
+<p>You will notice that the trendlines are different and that is because the quotes around the terms creates a totally different query based on <em>Google’s</em> algorithm. Navigate <a href="https://support.google.com/trends/answer/4359582?hl=en" target="blank">here</a> to see the results of queries that are different but that share similar terms. The takeaway is that <strong>the algorithm is stricter on quoted terms</strong> (because it only counts searches with that exact phrase) and the trendlines should reflect this (<em>“the juice laundry”</em> for example being generally lower then its non-quoted counterpart).</p>
+<p><strong><u><em>Step 5:</em></u></strong> Finally, add <em>The Juice Laundry</em> as another search term, but this time choose the option that states <em>‘Juice Shop in Charlottesville, VA’</em> underneath it.</p>
+<p>You have added what is known as a <em>topic</em>. According to Google, <strong>a topic is a group of terms that share a concept</strong>. For example, if you search the topic <em>“London,”</em> your search includes results for topics such as <em>“Capital of the UK”</em> and <em>“Londres”</em> which is <em>“London”</em> in Spanish. For all we know, Google’s algorithm may be grouping search terms like those we have (more or less) to form the topic of <em>The Juice Laundry</em>, but we cannot know for sure what it is doing.</p>
+<p>Your screen should look very similar to the photo below. Because samples are different every day, however, the trendlines will not look exactly the same.</p>
+<p><img src="https://raw.githubusercontent.com/MalcolmMashig/google-trends/master/google-trends-ui.png" /></p>
+<p><strong><u><em>Step 6:</em></u></strong> Scroll your mouse over the trendlines and witness how <strong>relative search interest is aggregated for week intervals</strong>.</p>
+<p>Look for the peak popularity of the trends and note the specific week they occurred. Do a quick google search for news around that time – did <em>TJL</em> open a new location or have a story written on them? Is there an obvious reason that relative search interest for them was highest then?</p>
+<p><strong><u><em>Step 7:</em></u></strong> Download the displayed data as a csv file and open it with Excel or Numbers (using the download button on the top right of the line graph). It should come from <a href="https://trends.google.com/trends/explore?date=2016-10-09%202018-12-31&geo=US&q=the%20juice%20laundry,%22the%20juice%20laundry%22,juice%20laundry,%22juice%20laundry%22,%2Fg%2F12m9gwg0k" target="blank">this exact UI</a>.</p>
+<p>You will notice that each term has its own column. However, the search terms are values, not variables, and so the dataset as you see it is <strong>not tidy</strong>. To quote <a href = "https://r4ds.had.co.nz/tidy-data.html#tidy-data-1" target = "blank">R4DS</a>, there are three interrelated rules which make a dataset tidy:</p>
+<ul>
+<li>Each variable must have its own column.</li>
+<li>Each observation must have its own row.</li>
+<li>Each value must have its own cell.</li>
+</ul>
+<p>That said, the variable should be “search term”, and each term (one for each observation) should fall under that column.</p>
+<p>Now that you are familiar with the UI and all of the nuances with search terms and topics, you are ready to repeat the process and expand on that process within R.</p>
+<hr />
+</div>
+<div id="testing-the-gtrendsr-package" class="section level4 tabset">
+<h4>Testing the <code>gtrendsR</code> package</h4>
+<p>Our first objective is to ensure that data pulled from gtrendsR is tidy and matches the data obtained directly from the UI (on the same day of course).</p>
+<p>Open RStudio and load the required packages. Make sure you install them first.</p>
+<pre class="r"><code>library(gtrendsR)
+library(tidyverse)</code></pre>
+<p>Assign the time period and search terms we used in the UI. The topic (represented in the URL as a code) must be decoded.</p>
+<pre class="r"><code>start_date &lt;- &quot;2016-10-09&quot;
+end_date &lt;- &quot;2018-12-31&quot;
+country &lt;- &quot;US&quot;
+time_span &lt;- str_c(start_date, end_date, sep = &quot; &quot;)
+topic_url &lt;- &quot;%2Fg%2F12m9gwg0k&quot;
+search_terms &lt;- c(&#39;&quot;juice laundry&quot;&#39;, 
+                  &#39;&quot;the juice laundry&quot;&#39;,
+                  &quot;juice laundry&quot;,
+                  &quot;the juice laundry&quot;,
+                  URLdecode(topic_url))</code></pre>
+<p>Run gtrendsR and I recommend saving the interest_over_time dataframe (the only one we are concerned with) as a csv file with today’s date.</p>
+<pre class="r"><code>gtrends_list &lt;- gtrends(search_terms, country, time = time_span)
+# write_csv(gtrends_list[[&quot;interest_over_time&quot;]], paste0(Sys.Date(), &quot;-google-trends-gtrendsr.csv&quot;))</code></pre>
+<p>Notice how <code>gtrendsR</code> data is tidy without any extra work on our part. Change the column names and types so that they make more sense and rename the topic code.</p>
+<pre class="r"><code>gtrends &lt;- gtrends_list[[&quot;interest_over_time&quot;]] %&gt;% 
+  as_tibble() %&gt;% 
+  rename(&#39;relative_interest&#39; = &#39;hits&#39;, 
+         &#39;week_of&#39; = &#39;date&#39;, 
+         &#39;search_term&#39; = &#39;keyword&#39;) %&gt;% 
+  select(c(&#39;week_of&#39;, &#39;search_term&#39;, &#39;relative_interest&#39;))
+gtrends$week_of &lt;- as.Date(gtrends$week_of) # Rather than datetime default
+gtrends$relative_interest &lt;- as.double(gtrends$relative_interest) # Not Int
+gtrends[gtrends$search_term == URLdecode(topic_url), &quot;search_term&quot;] &lt;- &quot;TJL Topic&quot;
+gtrends</code></pre>
+<p>Read in the csv you downloaded from the UI. Swap my local path with your local path.</p>
+<pre class="r"><code>csv &lt;- &quot;YOUR/LOCAL/CSV/PATH&quot;
+csv &lt;- &quot;https://raw.githubusercontent.com/MalcolmMashig/google-trends/master/multiTimeline-37.csv&quot;
+raw_google_trends &lt;- read_csv(csv, skip = 2)
+raw_google_trends</code></pre>
+<pre><code>## # A tibble: 117 x 6
+##    Week       `the juice laundry: (… `&quot;the juice laundry&quot;:… `juice laundry: (Un…
+##    &lt;date&gt;                      &lt;dbl&gt;                  &lt;dbl&gt;                &lt;dbl&gt;
+##  1 2016-10-09                     10                      0                   10
+##  2 2016-10-16                      0                      0                   31
+##  3 2016-10-23                      0                      0                   10
+##  4 2016-10-30                      0                      0                   39
+##  5 2016-11-06                      0                      0                    0
+##  6 2016-11-13                      0                     20                   10
+##  7 2016-11-20                      0                      0                    0
+##  8 2016-11-27                      0                      0                   28
+##  9 2016-12-04                      0                      0                  100
+## 10 2016-12-11                     19                      9                   38
+## # … with 107 more rows, and 2 more variables:
+## #   &quot;juice laundry&quot;: (United States) &lt;dbl&gt;,
+## #   The Juice Laundry: (United States) &lt;dbl&gt;</code></pre>
+<p>The data from the UI is not tidy. Tidy it. Reading in from the UI, as you can see, becomes tedious.</p>
+<pre class="r"><code>google_trends &lt;- raw_google_trends %&gt;% 
+  as_tibble() %&gt;% 
+  gather(&#39;the juice laundry: (United States)&#39;, 
+         &#39;&quot;the juice laundry&quot;: (United States)&#39;,
+         &#39;juice laundry: (United States)&#39;,
+         &#39;&quot;juice laundry&quot;: (United States)&#39;,
+         &#39;The Juice Laundry: (United States)&#39;, 
+         key = &quot;search_term&quot;, 
+         value = &quot;relative_interest&quot;) %&gt;% 
+  rename(&#39;week_of&#39; = Week)
+google_trends[google_trends$search_term == &quot;the juice laundry: (United States)&quot;, &quot;search_term&quot;] &lt;- &quot;the juice laundry&quot;
+google_trends[google_trends$search_term == &#39;&quot;the juice laundry&quot;: (United States)&#39;, &quot;search_term&quot;] &lt;- &#39;&quot;the juice laundry&quot;&#39;
+google_trends[google_trends$search_term == &#39;juice laundry: (United States)&#39;, &quot;search_term&quot;] &lt;- &quot;juice laundry&quot;
+google_trends[google_trends$search_term == &#39;&quot;juice laundry&quot;: (United States)&#39;, &quot;search_term&quot;] &lt;- &#39;&quot;juice laundry&quot;&#39;
+google_trends[google_trends$search_term == &#39;The Juice Laundry: (United States)&#39;, &quot;search_term&quot;] &lt;- &quot;TJL Topic&quot;</code></pre>
+<p>The two datasets may appear identical but we must make sure they are.</p>
+<pre class="r"><code>setequal(google_trends, gtrends)
+## [1] TRUE</code></pre>
+<p><strong>NOTE:</strong> If you do not get TRUE, download a new csv from the UI and rerun everything with the new file.</p>
+<hr />
+</div>
+<div id="get_gtrends_url-function" class="section level4">
+<h4><code>get_gtrends_url</code> function</h4>
+<p>Enter the parameters you desire and retrieve the URL for the <em>Google Trends</em> Web UI with those parameters. Here you do not need to decode the topic terms. Then again, topic terms are not practical for this function considering you need the URL to get their codes in the first place.</p>
+<pre class="r"><code>start_date &lt;- &quot;2016-10-09&quot;
+end_date &lt;- &quot;2018-12-31&quot;
+country &lt;- &quot;US&quot;
+search_terms &lt;- c(&quot;the juice laundry&quot;, 
+                  &#39;&quot;the juice laundry&quot;&#39;, 
+                  &quot;juice laundry&quot;,
+                  &#39;&quot;juice laundry&quot;&#39;, 
+                  &quot;%2Fg%2F12m9gwg0k&quot;)
+get_gtrends_url &lt;- function(start_date, end_date, country, search_terms) {
+  search_terms &lt;- gsub(&quot; &quot;, &quot;%20&quot;, search_terms)
+  search_terms &lt;- gsub(&#39;&quot;&#39;, &quot;%22&quot;, search_terms)
+  str_c(
+    str_c(
+      &quot;https://trends.google.com/trends/explore?date=&quot;,
+      start_date,
+      &quot;%20&quot;,
+      end_date,
+      &quot;&amp;geo=&quot;,
+      country,
+      &quot;&amp;q=&quot;
+    ),
+    str_c(
+      search_terms[1],
+      if(length(search_terms) &gt;= 2) {search_terms[2]},
+      if(length(search_terms) &gt;= 3) {search_terms[3]},
+      if(length(search_terms) &gt;= 4) {search_terms[4]},
+      if(length(search_terms) &gt;= 5) {search_terms[5]},
+      sep = &quot;,&quot;
+    )
+  )
+}
+get_gtrends_url(start_date, end_date, country, search_terms)</code></pre>
+<pre><code>## [1] &quot;https://trends.google.com/trends/explore?date=2016-10-09%202018-12-31&amp;geo=US&amp;q=the%20juice%20laundry,%22the%20juice%20laundry%22,juice%20laundry,%22juice%20laundry%22,%2Fg%2F12m9gwg0k&quot;</code></pre>
+<hr />
+</div>
+<div id="replicating-the-ui" class="section level4">
+<h4>Replicating the UI</h4>
+<p>The next objective is to replicate the UI’s line graph and bar graph within the RStudio IDE.</p>
+<p>Install/load the tools we will need for the graphs we want. Utilizing <code>ggplot</code> and the <code>ggtech</code> add-on package (found <a href="https://github.com/ricardo-bion/ggtech" target="blank">here</a>) will allow us to make visuals that look nearly identical to those that Google Trends displays for us.</p>
+<pre class="r"><code># devtools::install_github(&quot;ricardo-bion/ggtech&quot;, dependencies=TRUE)
+library(gridExtra)
+library(ggtech)
+library(extrafont)
+download.file(
+  &quot;http://social-fonts.com/assets/fonts/product-sans/product-sans.ttf&quot;, 
+  &quot;/Library/Fonts/product-sans.ttf&quot;, 
+  method=&quot;curl&quot;
+  )
+font_import(pattern = &#39;product-sans.ttf&#39;, prompt=FALSE)</code></pre>
+<p><strong>NOTE:</strong> If you ever get an error like <em>“polygon edge not found”</em> in the following steps, save what you have, quit and re-open RStudio, and run it again.</p>
+<p><strong><u><em>Line Graph:</em></u></strong></p>
+<pre class="r"><code>lg &lt;- ggplot(
+  google_trends, aes(x = week_of, y = relative_interest, color = search_term)
+  ) + 
+  geom_line() + 
+  labs(x = &#39;Month&#39;, 
+       y = &#39;Relative Interest&#39;, 
+       color = &#39;Search Term&#39;, 
+       title = &quot;Interest over Time&quot;,
+       caption = &quot;https://goo.gl/XV8kHd&quot;)
+  
+lg</code></pre>
+<p><img src="research-group-projects_files/figure-html/basic-line-graph-1.png" width="672" /></p>
+<p>It still looks far different than the UI. The solution is the <code>ggtech</code> package. There is a problem, however, because the package only specifies four google colors while our line graph contains five different search terms with their unique lines. If you look back at the UI, the fifth color is a shade of purple. If you take a screenshot isolating the purple line and then upload it <a href="https://html-color-codes.info/colors-from-image/" target="blank">here</a>, the program will spit out the exact color code. I got <em>#8F39AA</em> and you should get something similar. Now we need to update one of the package’s function (found <a href="https://github.com/ricardo-bion/ggtech/blob/master/R/scale_color_tech.R" target="blank">here</a>) to add the fifth color to the google theme. Then we can use <code>ggtech</code> to create the ideal line graph.</p>
+<pre class="r"><code>scale_color_tech &lt;- function(theme=&quot;airbnb&quot;, tech_key = list(
+  airbnb = c(&quot;#FF5A5F&quot;, &quot;#FFB400&quot;, &quot;#007A87&quot;,  &quot;#FFAA91&quot;, &quot;#7B0051&quot;),
+  facebook = c(&quot;#3b5998&quot;, &quot;#6d84b4&quot;, &quot;#afbdd4&quot;, &quot;#d8dfea&quot;),
+  google = c(&quot;#5380E4&quot;, &quot;#E12A3C&quot;, &quot;#FFBF03&quot;, &quot;#00B723&quot;, &quot;#8F39AA&quot;), 
+  # fifth color added on line above
+  etsy = c(&quot;#F14000&quot;, &quot;#67B6C3&quot;, &quot;#F0DA47&quot;, &quot;#EBEBE6&quot;, &quot;#D0D0CB&quot;),
+  twitter = c(&quot;#55ACEE&quot;, &quot;#292f33&quot;, &quot;#8899a6&quot;, &quot;#e1e8ed&quot;),
+  X23andme = c(&quot;#3595D6&quot;,&quot;#92C746&quot;,&quot;#F2C100&quot;,&quot;#FF6D19&quot;, &quot;#6F3598&quot;)
+)) {
+  
+  scale_color_manual(values=tech_key[[theme]])
+  
+}
+line_graph &lt;- lg +
+  theme_tech(theme = &#39;google&#39;) + 
+  scale_color_tech(theme = &#39;google&#39;) +
+  guides(color = guide_legend(nrow = 2)) +
+  theme(legend.position = &#39;top&#39;, 
+        legend.direction = &#39;vertical&#39;,
+        axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  scale_x_date(date_labels = &quot;%m/%Y&quot;, date_breaks = &quot;2 months&quot;)
+
+line_graph</code></pre>
+<p><img src="research-group-projects_files/figure-html/google-line-graph-1.png" width="672" /></p>
+<p><strong><u><em>Bar Graph:</em></u></strong></p>
+<p>First, summarize the average <code>relative_interest</code> for each search term and round to avoid decimals. The <code>group_by</code> and <code>summarise</code> functions will almost always be used together.</p>
+<pre class="r"><code>avg_trend &lt;- google_trends %&gt;% 
+  group_by(search_term) %&gt;% 
+  summarise(&#39;avg_interest&#39; = round(mean(relative_interest)))
+avg_trend</code></pre>
+<pre><code>## # A tibble: 5 x 2
+##   search_term             avg_interest
+## * &lt;chr&gt;                          &lt;dbl&gt;
+## 1 &quot;\&quot;juice laundry\&quot;&quot;               22
+## 2 &quot;\&quot;the juice laundry\&quot;&quot;            6
+## 3 &quot;juice laundry&quot;                   41
+## 4 &quot;the juice laundry&quot;                8
+## 5 &quot;TJL Topic&quot;                       22</code></pre>
+<p>Construct a draft for the bar graph. Remember that bar graphs with y variables specified must clarify that <code>stat = 'identity'</code>.</p>
+<pre class="r"><code>bg &lt;- ggplot(avg_trend, aes(x = search_term, y = avg_interest)) + 
+  geom_bar(stat = &#39;identity&#39;) +
+  labs(x = &#39;Average Interest&#39;)
+bg</code></pre>
+<p><img src="research-group-projects_files/figure-html/basic-bar-graph-1.png" width="672" /></p>
+<p>To add the fifth color this time, we will save all of Google’s color codes (above) in a list and use the fill argument to deploy them.</p>
+<pre class="r"><code>google_colors &lt;- c(&quot;#5380E4&quot;, &quot;#E12A3C&quot;, &quot;#FFBF03&quot;, &quot;#00B723&quot;, &quot;#8F39AA&quot;)
+bar_graph &lt;- bg +
+  geom_bar(stat = &#39;identity&#39;, fill = google_colors) + 
+  theme_tech(theme = &#39;google&#39;) +
+  scale_fill_tech(theme = &#39;google&#39;) +
+  theme(axis.text.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.title.x = element_text(size = 11),
+        axis.ticks.x = element_blank()) + 
+  ylim(0, 100)
+bar_graph</code></pre>
+<p><img src="research-group-projects_files/figure-html/google-bar-graph-1.png" width="672" /></p>
+<p><strong><u><em>Copying the UI</em></u></strong></p>
+<p>Now we can arrange both graphs side by side as they appear in the UI. It did require some guessing-and-checking in order to decide the scaling that was best.</p>
+<pre class="r"><code>ui_copy &lt;- grid.arrange(bar_graph, line_graph, ncol = 2, widths = c(1, 6))</code></pre>
+<p><img src="research-group-projects_files/figure-html/ui-replication-1.png" width="672" /></p>
+<pre class="r"><code># ggsave(&quot;ui_copy.png&quot;, ui_copy)</code></pre>
+<p>Here is the example UI again for comparision:</p>
+<p><img src="https://raw.githubusercontent.com/MalcolmMashig/google-trends/master/google-trends-ui.png" /></p>
+<hr />
+</div>
+<div id="tjl-search-terms-analysis" class="section level4">
+<h4><em>TJL</em> search terms analysis</h4>
+<p>One of the main purposes of Google Trends is to benchmark relative search interest against relative search interest throughout the past. That said, the next objective is to decide which of the TJL search terms is most appropriate to follow and use as the standard. We could simply resort to the Topic search and trust that the Google algorithm knows best, but since not all entities have a Topic as defined by Google (<em>Corner Juice</em> for example), it might be intuitive to find the search term that draws a relative interest most similar to that of the Topic. That way, we can observe what features of a search are best when the entity we search for has no Topic. For instance, do the most accurate search terms contain all words in the entity’s official name or only the vital ones? Are the terms most accurate when surrounded in quotes? Etcetera.</p>
+<p>Before we start to compare the TJL search terms and their similarity to the <em>TJL</em> Topic, we must ensure that the data is reliable by taking many samples. Here, you will begin to see the advantage of using R and <code>gtrendsR</code> to analyze Google Trends data.</p>
+<p><strong><u>Sampling for Reliability</u></strong></p>
+<p>Since 24 hours must pass before a new sample with new data is generated, I will provide thirteen samples (with the same parameters as above). All samples were collected as csv files after I ran <code>gtrendsR</code> on thirteen seperate days during the end of February and beginning of March 2019.</p>
+<p>First, read the samples in with only the relative interest (hits) that we are concerned with. You can find all of the samples below in <a href="%22https://github.com/GCOM7140/google-trends-analysis/tree/master/data/samples%22">this folder</a>.</p>
+<pre class="r"><code>raw &lt;- &quot;https://raw.githubusercontent.com/MalcolmMashig/google-trends/master/tjl/2019-&quot;
+tjl &lt;- &quot;-tjl-sample.csv&quot;
+X1 &lt;- read_csv(paste0(raw, &quot;02-18&quot;, tjl)) %&gt;% select(hits)
+X2 &lt;- read_csv(paste0(raw, &quot;02-19&quot;, tjl)) %&gt;% select(hits)
+X3 &lt;- read_csv(paste0(raw, &quot;02-20&quot;, tjl)) %&gt;% select(hits)
+X4 &lt;- read_csv(paste0(raw, &quot;02-21&quot;, tjl)) %&gt;% select(hits)
+X5 &lt;- read_csv(paste0(raw, &quot;02-22&quot;, tjl)) %&gt;% select(hits)
+X6 &lt;- read_csv(paste0(raw, &quot;02-23&quot;, tjl)) %&gt;% select(hits)
+X7 &lt;- read_csv(paste0(raw, &quot;02-24&quot;, tjl)) %&gt;% select(hits)
+X8 &lt;- read_csv(paste0(raw, &quot;02-25&quot;, tjl)) %&gt;% select(hits)
+X9 &lt;- read_csv(paste0(raw, &quot;02-26&quot;, tjl)) %&gt;% select(hits)
+X10 &lt;- read_csv(paste0(raw, &quot;02-27&quot;, tjl)) %&gt;% select(hits)
+X11 &lt;- read_csv(paste0(raw, &quot;03-01&quot;, tjl)) %&gt;% select(hits)
+X12 &lt;- read_csv(paste0(raw, &quot;03-02&quot;, tjl)) %&gt;% select(hits)
+X13 &lt;- read_csv(paste0(raw, &quot;03-03&quot;, tjl)) %&gt;% select(hits)</code></pre>
+<p>Based on the method found <a href="%22https://github.com/PMassicotte/gtrendsR/issues/269#issuecomment-392784579%22">here</a>, the following code will average the relative interests (hits) for each week and search term among all samples.</p>
+<pre class="r"><code>gtrends.list &lt;- list(X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, X11, X12, X13)
+gtrends_averaged &lt;- Reduce(&#39;+&#39;, gtrends.list) / length(gtrends.list)
+gtrends_averaged %&gt;% as_tibble()</code></pre>
+<pre><code>## # A tibble: 585 x 1
+##     hits
+##    &lt;dbl&gt;
+##  1 10.7 
+##  2 20.2 
+##  3 17.8 
+##  4 11.8 
+##  5  3.85
+##  6 14.2 
+##  7 16.9 
+##  8 12.9 
+##  9 35.5 
+## 10 21.4 
+## # … with 575 more rows</code></pre>
+<p>All we need to do now is reattach the average interests to their respective weeks and search terms (using the frame taken from one of the samples) and then clean it up a bit as we have done earlier in the guide.</p>
+<pre class="r"><code>frame &lt;- read_csv(paste0(raw, &quot;02-18&quot;, tjl)) %&gt;% 
+  select(&quot;week_of&quot; = date, &quot;search_term&quot; = keyword)
+sample_average &lt;- bind_cols(frame, gtrends_averaged) %&gt;% 
+  as_tibble() %&gt;% 
+  rename(&quot;average_relative_interest&quot; = hits)
+sample_average$week_of &lt;- as.Date(sample_average$week_of) 
+# Rather than datetime default
+sample_average[sample_average$search_term == gsub(&quot;q=&quot;, &quot;&quot;, 
+                                    URLdecode(topic_url)), 
+        &quot;search_term&quot;] &lt;- &quot;TJL Topic&quot;</code></pre>
+<p><strong><u><em>Comparision via Correlation</em>:</u></strong></p>
+<p>While one of the search terms (“juice laundry” in my case) may clearly appear the most similar to the TJL topic, there are systematic and reproducible ways of checking.</p>
+<p>We must un-tidy it with spread to check the correlations of the different search_terms with the topic term.</p>
+<pre class="r"><code>y &lt;- sample_average %&gt;% spread(key = &quot;search_term&quot;, value = &quot;average_relative_interest&quot;)
+y</code></pre>
+<pre><code>## # A tibble: 117 x 6
+##    week_of    `&quot;Juice Laundry… `&quot;The Juice Lau… `Juice Laundry` `The Juice Laun…
+##    &lt;date&gt;                &lt;dbl&gt;            &lt;dbl&gt;           &lt;dbl&gt;            &lt;dbl&gt;
+##  1 2016-10-09             8.15            5.77             24.8            11.8 
+##  2 2016-10-16            20.2             4.15             27.3             4.15
+##  3 2016-10-23            17.8             5.46             25.9            11.2 
+##  4 2016-10-30            11.8             0.769            34.5             3.23
+##  5 2016-11-06             3.85            0                12.8             9.38
+##  6 2016-11-13            14.2             8.85             28.7            10.7 
+##  7 2016-11-20            16.9             8.92             18.3             8.92
+##  8 2016-11-27            12.9             2.92             25.8             2.92
+##  9 2016-12-04            38.8             0                58.6             0   
+## 10 2016-12-11            21.4             6.62             26.7            10.6 
+## # … with 107 more rows, and 1 more variable: TJL Topic &lt;dbl&gt;</code></pre>
+<pre class="r"><code># comparing each search term column with the topic column
+cor(y[, 2], y[, 6]) </code></pre>
+<pre><code>##                 TJL Topic
+## &quot;Juice Laundry&quot; 0.9918474</code></pre>
+<pre class="r"><code>cor(y[, 3], y[, 6])</code></pre>
+<pre><code>##                     TJL Topic
+## &quot;The Juice Laundry&quot; 0.4750415</code></pre>
+<pre class="r"><code>cor(y[, 4], y[, 6])</code></pre>
+<pre><code>##               TJL Topic
+## Juice Laundry 0.7526071</code></pre>
+<pre class="r"><code>cor(y[, 5], y[, 6])</code></pre>
+<pre><code>##                   TJL Topic
+## The Juice Laundry 0.3033808</code></pre>
+<p>The strongest correlation for me (by far) was <em>“juice laundry”</em>.</p>
+<p>It makes sense because all relevant searches will definitely include both those words. Various add-ons before or after (like <em>“the”</em> or <em>“cville”</em>) may or may not be included. That said, the seemingly best <code>gtrendsR</code> search terms are those with only the essential words sourrounded by quotes.</p>
+<hr />
+</div>
+<div id="corner-juice-vs.-tjl" class="section level4 tabset">
+<h4><em>Corner Juice</em> vs. <em>TJL</em></h4>
+<p>Google Trends allows a business to track their search interest over time and monitor the effects of changes they make or press they get. Beyond that, it allows a business to benchmark against competition in terms of consumer interest.</p>
+<p>I have repeated the <code>gtrendsR</code> process but this time with just <em>“juice laundry”</em> and <em>“corner juice”</em> (the competition) as search terms. The same <code>ggplot</code> process (with minor changes tailored to this search) yields this:</p>
+<p><img src="research-group-projects_files/figure-html/tjl-vs-cj-ui-replication-1.png" width="672" /></p>
+<p>You can find this web UI at the following link:</p>
+<pre><code>## [1] &quot;https://trends.google.com/trends/explore?date=2016-10-09%202018-12-31&amp;geo=US&amp;q=%22corner%20juice%22,%22juice%20laundry%22&quot;</code></pre>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
