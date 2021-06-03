@@ -30,7 +30,7 @@ m.mashig@columbia.edu | 201-753-1240
 
 Please find my resume, transcript and statement of purpose within [Resume+](https://malcolm-mashig.netlify.app/resume.html), selected course projects within [Course Projects](https://malcolm-mashig.netlify.app/coursework.html) and other selected works of mine within [Other Projects](https://malcolm-mashig.netlify.app/other-projects.html).
 
-*This website was built with R Markdown and is hosted by Netlify. Code and files for the site can be found on its synced <a href="https://github.com/MalcolmMashig/portfolio-website" target="_blank">GitHub Repository</a>.*
+*This website was built with R Markdown and is hosted by Netlify. Code and files for the site can be found on its synced <a href="https://github.com/MalcolmMashig/portfolio-website" target="_blank">GitHub repository</a>.*
 
 <br>
 
