@@ -18,10 +18,10 @@ pagetitle: "Malcolm J. Mashig"
 
 I am currently enrolled in the MS in Computer Science program at Columbia University in NYC, concentrating in machine learning. I received a BA in Statistics and Computer Science from the University of Virginia (UVA) in May 2021.
 
-During my time at UVA, I served as CFO for The Cavalier Daily, the student-run, financially-independent news organization at the university. I also worked as a research fellow for Research for Sustainable Commerce, a customer analytics group that partners with and studies local and non-local businesses dedicated to improving their social and environmental impact.
+Most recently, I worked as a Software Engineer at Theta Equity Partners, a customer-analytics consultancy and corporate valuation service. In this position, I led a number of projects to simplify the generation of model diagnostics and client-facing visualizations. During my time at UVA, I served as CFO for The Cavalier Daily, the student-run, financially-independent news organization at the university. I also worked as a research fellow for Research for Sustainable Commerce, a customer analytics group that partners with and studies local and non-local businesses dedicated to improving their social and environmental impact.
 
 <blockquote>
-*I am actively seeking an internship or entry-level position in the areas of software engineering, data science and quantitative research. Please reach out if you know of any such opportunities or if you would simply like to connect!*
+*I am actively seeking an entry-level position in the areas of data science, software engineering and quantitative research. Please reach out if you know of any such opportunities or if you would simply like to connect!*
 
 <a href="https://www.linkedin.com/in/malcolm-mashig/" target="_blank">LinkedIn</a> | <a href="https://twitter.com/MalcolmMashig" target="_blank">Twitter</a> | <a href="https://github.com/MalcolmMashig" target="_blank">GitHub</a>
 

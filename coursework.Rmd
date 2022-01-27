@@ -5,6 +5,68 @@ pagetitle: "Malcolm J. Mashig"
 
 ## ________________________________________________________________________ {.tabset .tabset-fade}
 
+### COMS 6998: Security and Robustness of Machine Learning Systems
+
+**Project Summary:** *We investigate the scalability of robust self-training (augmenting the training set with unlabeled data) for the task of low-resolution image classification. Specifically, we analyze the impact of increased classification difficulty (i.e. more specific classes) and the natural coinciding decrease to pseudolabel accuracy.*
+
+<center>
+
+<img src="images/srmlpg1.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/srmlpg2.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/srmlpg3.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/srmlpg4.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/srmlpg5.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/srmlpg6.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/srmlpg7.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/srmlpg8.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+### COMS 6998: Fundamentals of Speech Recognition
+
+**Project Summary:** *We develop a pipeline to isolate and segment vocals within music and utilize a state-of-the-art speech-to-text model to transcribe the lyrics. We demonstrate that the model poorly transcribes this "informal speech" although the performance is about 9% better using the preprocessing pipeline.*
+
+<center>
+
+<img src="images/alrpg1.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/alrpg2.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/alrpg3.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/alrpg4.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/alrpg5.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
+### COMS 4995: Parallel Functional Programming
+
+**Project Summary:** *We parallelize the huffman coding file compression algorithm.*
+
+<center>
+
+<img src="images/pfppg1.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/pfppg2.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/pfppg3.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/pfppg4.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/pfppg5.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+<img src="images/pfppg6.png" style="width:100; border:1px solid; margin-right: 0px" align="middle">
+
+</center>
+
 ### CS 6501: Information Retrieval {.tabset .tabset-fade}
 
 #### Re-ranking Search Results via Interactive Disambiguation
