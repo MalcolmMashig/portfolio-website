@@ -16,14 +16,16 @@ pagetitle: "Malcolm J. Mashig"
 <br>
 <br>
 
-I am currently enrolled in the MS in Computer Science program at Columbia University in NYC, concentrating in machine learning and expecting to graduate in May 2022. I received a BA in Statistics and Computer Science from the University of Virginia (UVA) in May 2021.
+In May 2022, I completed the MS in Computer Science program (Concentration: Machine Learning) at Columbia University in NYC. I received a BA in Statistics and Computer Science from the University of Virginia (UVA) in May 2021.
 
-Most recently, I worked as a Software Engineer at Theta Equity Partners, a customer-analytics consultancy and corporate valuation service. In this position, I led a number of projects to simplify the generation of model diagnostics and client-facing visualizations. During my time at UVA, I served as CFO for The Cavalier Daily, the student-run, financially-independent news organization at the university. I also worked as a research fellow for Research for Sustainable Commerce, a group that partners with and studies local and non-local businesses dedicated to improving their social and environmental impact.
+While completing my master's, I worked as a Software Engineer at Theta Equity Partners, a customer-analytics consultancy and corporate valuation service. In this position, I led a number of projects to simplify the generation of model diagnostics and client-facing visualizations. In June 2022, I started as a Junior Data Scientist at the same company. 
+
+During my time at UVA, I served as CFO for The Cavalier Daily, the student-run, financially-independent news organization at the university. I also worked as a research fellow for Research for Sustainable Commerce, a group that partners with and studies local and non-local businesses dedicated to improving their social and environmental impact.
 
 <blockquote>
-*I am actively seeking an entry-level position in the areas of data science, software engineering and quantitative research. Please reach out if you know of any such opportunities or if you would simply like to connect!*
+*My career interests are in the areas of data science, software engineering and quantitative research. Please reach out if you know of any relevant opportunities or if you would simply like to connect!*
 
-<a href="https://www.linkedin.com/in/malcolm-mashig/" target="_blank">LinkedIn</a> | <a href="https://twitter.com/MalcolmMashig" target="_blank">Twitter</a> | <a href="https://github.com/MalcolmMashig" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/malcolm-mashig/" target="_blank">LinkedIn</a> | <a href="https://github.com/MalcolmMashig" target="_blank">GitHub</a>
 
 m.mashig@columbia.edu | 201-753-1240
 </blockquote>
@@ -31,11 +33,3 @@ m.mashig@columbia.edu | 201-753-1240
 Please find my resume, transcript and statement of purpose within [Resume+](https://malcolm-mashig.netlify.app/resume.html), selected course projects within [Course Projects](https://malcolm-mashig.netlify.app/coursework.html) and other selected works of mine within [Other Projects](https://malcolm-mashig.netlify.app/other-projects.html).
 
 *This website was built with R Markdown and is hosted by Netlify. Code and files for the site can be found on its synced <a href="https://github.com/MalcolmMashig/portfolio-website" target="_blank">GitHub repository</a>.*
-
-<br>
-
-<center>
-
-<img src="images/me-at-columbia.jpeg" style="width:50%; border:3px solid; margin-right: 0px" align="middle">
-
-</center>
